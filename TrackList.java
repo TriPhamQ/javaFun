@@ -1,0 +1,19 @@
+import java.util.HashMap;
+
+class TrackList {
+  public static void main(String[] args) {
+    HashMap<String, String> trackList = new HashMap<String, String>();
+
+    trackList.put("Song name one", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis suscipit tellus, eget consectetur ante. Aliquam luctus a ex nec pellentesque. Cras id odio ac ex dapibus cursus nec eget lacus. Morbi id risus ultrices, vehicula magna quis, finibus dui. Curabitur risus dolor, facilisis eu tincidunt ac, fermentum at dolor. Suspendisse potenti. Vestibulum finibus volutpat enim non commodo. Donec eget consequat tellus, quis sodales nunc. Nullam vel vestibulum lectus. Pellentesque nec tincidunt lacus. Cras turpis orci, aliquam vel auctor finibus, dictum in urna. Vivamus sit amet diam sit amet ante ornare sagittis. Cras non ornare dui. Donec blandit urna blandit mollis varius. Quisque laoreet tempor elit at hendrerit. Vestibulum lectus lorem, condimentum id lectus id, ornare vulputate nulla.");
+    trackList.put("Song name two", "Duis tincidunt dictum rutrum. Sed tincidunt nunc finibus, dictum diam id, egestas enim. Sed est nunc, dapibus vel lectus eu, tincidunt posuere ante. Mauris a tristique quam. Duis libero eros, mollis et augue id, maximus gravida nisl. Ut diam arcu, euismod ac placerat sit amet, sollicitudin eget neque. Aenean porta purus eget tellus dignissim, non vestibulum ipsum placerat. Pellentesque sagittis aliquam erat sit amet commodo. Curabitur in hendrerit odio, vel fringilla nisl. Maecenas eu magna nec metus tincidunt efficitur. Vestibulum fermentum non turpis fermentum viverra. Pellentesque auctor porta massa pulvinar rutrum. Duis eget ultrices diam, eget sagittis nisl. Morbi aliquet eros vel diam finibus semper. Morbi sed arcu in ligula vehicula accumsan vitae ut ante.");
+    trackList.put("Song name three", "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin porttitor massa in faucibus rhoncus. Vestibulum sed erat nunc. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras aliquet et libero eleifend aliquam. Sed ornare lacinia metus vitae tempus. Nunc mi nibh, venenatis at placerat ut, sollicitudin sit amet massa. Nulla facilisi. Quisque at tristique quam. Vivamus consequat arcu id eros scelerisque facilisis vel in sem. Ut sit amet elit arcu. Aliquam nibh ante, tincidunt id dapibus at, finibus id urna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas hendrerit consectetur tellus, quis tempus odio faucibus et. Pellentesque sagittis convallis justo, non luctus massa pellentesque et.");
+    trackList.put("Song name four", "Aliquam vel nibh eu sapien lobortis facilisis at egestas tellus. Donec gravida nibh eu scelerisque facilisis. Fusce elementum mauris sit amet ante dapibus ultrices. Praesent erat magna, commodo ac eros in, efficitur porttitor velit. Pellentesque tristique libero lorem, quis bibendum risus ultricies eu. Curabitur eu scelerisque libero. Aenean sodales ipsum leo, vitae vehicula sem aliquet facilisis. Suspendisse auctor massa ac dui volutpat mollis. Donec venenatis iaculis tellus in auctor. Nullam molestie augue diam, at sodales orci pulvinar id. Nulla tincidunt luctus odio, at vulputate nibh egestas nec. Mauris tincidunt sem vitae justo mattis aliquam. In orci ipsum, pharetra sit amet vestibulum vel, efficitur quis leo.");
+
+    String lyrics = trackList.get("Song name one");
+
+    System.out.println(lyrics);
+    for (String name : trackList.keySet()) {
+      System.out.println(name + ": " + trackList.get(name));
+    }
+  }
+}
