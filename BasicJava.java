@@ -39,6 +39,17 @@ class BasicJava {
     return max;
   }
 
+  public int min(int[] myArr) {
+    int min = myArr[0];
+
+    for(int i = 0; i < myArr.length; i++) {
+      if (myArr[i] < min) {
+        min = myArr[i];
+      }
+    }
+    return min;
+  }
+
   public int sum(int[] myArr) {
     int sum = 0;
 
@@ -89,6 +100,25 @@ class BasicJava {
         myOutputArr.add(number);
       }
     }
+    return myOutputArr;
+  }
+
+  public int[] maxMinAverage(int[] myArr) {
+    int[] myOutputArr = new int[3];
+
+    myOutputArr[0] = max(myArr);
+    myOutputArr[1] = min(myArr);
+    myOutputArr[2] = average(myArr);
+    return myOutputArr;
+  }
+
+  public int[] shiftValues(int[] myArr) {
+    int[] myOutputArr = new int[myArr.length];
+
+    for(int i = 0; i < myArr.length-1; i++) {
+      myOutputArr[i] = myArr[i+1];
+    }
+    myOutputArr[myArr.length-1] = 0;
     return myOutputArr;
   }
 }
